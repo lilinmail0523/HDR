@@ -56,12 +56,16 @@ def PlotResponseCurve(gList):
 
 
 def PlotRadianceMap(lnE, filename):
-    fig, ax = plt.subplots()
-    im = ax.imshow(lnE, cmap='jet')
-    ax.set_axis_off()
-    divider = make_axes_locatable(ax)
-    cax = divider.append_axes("right", size="7%", pad="2%")
-    fig.colorbar(im, cax = cax)
+    fig = plt.figure(figsize=(12, 5))
+    ax1,ax2, ax3 = fig.subplots(1, 3)
+    for ax, color, index in zip((ax1, ax2, ax3), ('Blue', 'Green', 'Red'), (0,1,2)):
+        im = ax.imshow(lnE[:,:,index], cmap='jet')
+        ax.set_axis_off()
+        divider = make_axes_locatable(ax)
+        cax = divider.append_axes("right", size="7%", pad="2%")
+        ax.set_title(color, fontsize = 20)
+        cbar = fig.colorbar(im, cax = cax)
+        cbar.ax.tick_params(labelsize=8)
     fig.savefig(filename)
 
 
@@ -148,9 +152,8 @@ def HDR(ImgList, ExposureList):
         E[:,:,channel] = np.exp(ln_rad_sum / (w_sum + 1e-8))
     print(np.log(E).max())
 
-    PlotRadianceMap(np.log(E[:,:,0]), 'BlueRadianceMap.png')
-    PlotRadianceMap(np.log(E[:,:,1]), 'GreenRadianceMap.png')
-    PlotRadianceMap(np.log(E[:,:,2]), 'RedRadianceMap.png')
+    PlotRadianceMap(np.log(E), 'RadianceMap.png')
+
     PlotResponseCurve(gList)
     RadianceSave(E, "HDR")
 
