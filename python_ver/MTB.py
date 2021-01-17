@@ -11,7 +11,6 @@ def bitmap(img, bits):
     return tb, eb
 
 #use np.roll to shift image
-#refer: https://stackoverflow.com/questions/27087139/shifting-an-image-in-numpy
 def ShiftImg(Img, dy, dx):
     img = np.roll(Img, dy, axis = 0)
     img = np.roll(img, dx, axis = 1)

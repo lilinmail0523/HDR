@@ -69,8 +69,7 @@ def PlotRadianceMap(lnE, filename):
     fig.savefig(filename)
 
 
-#reference: Numpy radiance writer
-#https://gist.github.com/edouardp/3089602
+#Numpy radiance writer
 def RadianceSave(HDR, filename):
     image = np.zeros(HDR.shape)
     image[:,:,0] = HDR[:,:,2]
