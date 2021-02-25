@@ -1,6 +1,6 @@
 # HDR
 
-The aim of this project was to implement the photographic imaging techniques, including HDR imaging and tone mapping. The HDR image is created by followed steps:
+The aim of this project was to implement the photographic imaging techniques, including HDR imaging and tone mapping. The HDR image was created by followed steps:
 
 1. Images alignment by Median Threshold Bitmap
 2. HDR radiance map recovering by [Paul E. Debevec method](http://www.pauldebevec.com/Research/HDR/debevec-siggraph97.pdf)
