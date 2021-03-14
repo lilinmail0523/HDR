@@ -22,7 +22,7 @@ def PhotographcGlobal(Lw, delta = 1e-5, a = 0.36, gamma = 2.2):
 
 #Reinhard Local:
 #http://www.cmap.polytechnique.fr/~peyre/cours/x2005signal/hdr_photographic.pdf
-#parameter take from https://github.com/felipegb94/hdr_imaging/blob/master/reinhardLocal.m
+#parameter perference: HDR Toolbox
 def PhotographcLocal(Lw, delta = 1e-6, a = 0.36, phi = 10, eps = 0.05, gamma = 2.2):
     Lumin_Lw = 0.27 * Lw[:,:,0] + 0.67 * Lw[:,:,1] + 0.06 * Lw[:,:,2]
     Lw_avg = np.exp(np.mean(np.log(delta + Lumin_Lw)))

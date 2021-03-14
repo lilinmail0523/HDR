@@ -8,7 +8,7 @@
 //Reinhard tone mapping
 //http://www.cmap.polytechnique.fr/~peyre/cours/x2005signal/hdr_photographic.pdf
 
-//parameter take from https ://github.com/felipegb94/hdr_imaging/blob/master/reinhardLocal.m
+//parameter reference : HDR Toolbox
 
 
 
