@@ -25,3 +25,11 @@ The difference between Reinhard’s local and global tone mapping operators is d
 ## My HDR photo
 
 ![](Python_ver/BridgeLocal.png)
+
+# Reference
+
+[Recovering High Dynamic Range Radiance Maps from Photographs, Paul E. Debevec, Jitendra Malik, 1997.](http://www.pauldebevec.com/Research/HDR/debevec-siggraph97.pdf)
+
+[Photographic Tone Reproduction for Digital Images, Erik Reinhard *et al.*, 2002](http://www.cmap.polytechnique.fr/~peyre/cours/x2005signal/hdr_photographic.pdf)
+
+Advanced High Dynamic Range Imaging (2nd Edition), Banterle *et al.*, 2017. [[HDR Toolbox github]](https://github.com/banterle/HDR_Toolbox)
