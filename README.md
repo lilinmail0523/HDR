@@ -8,17 +8,20 @@ The aim of this project was to implement the photographic imaging techniques, in
 
 # Results:
 ## Response Curve:
-<center><img src="https://github.com/lilinmail0523/HDR/blob/master/python_ver/RC.png" width="50%" height="50%" /></center>
+<center><img src="https://github.com/lilinmail0523/HDR/blob/master/python_ver/RC.png"/></center>
 
 ## Radiance Map:
-![RadianceMap](https://github.com/lilinmail0523/HDR/blob/master/python_ver/RadianceMap.png)
+![RadianceMap](https://github.com/lilinmail0523/HDR/blob/master/python_ver/RadianceMap.png )
 
 ## Tone mapping :
-### Global:
-<center><img src="https://github.com/lilinmail0523/HDR/blob/master/python_ver/ldrGlobal.png" width="75%" height="75%" /></center>
+
+The difference between Reinhard’s local and global tone mapping operators is dodging and burning process which could increase contrast by pixel-wise manipulation. The results of local tone mapping after dodging and burning made the lines in the light darker. 
+
+| Global | Local |
+|:---:|:---:|
+|![](python_ver/ldrGlobal.png)|![](python_ver/ldrLocal.png)|
 
 
+## My HDR photo
 
-### Local:
-
-<center><img src="https://github.com/lilinmail0523/HDR/blob/master/python_ver/ldrLocal.png" width="75%" height="75%" /></center>
+![](Python_ver/BridgeLocal.png)
