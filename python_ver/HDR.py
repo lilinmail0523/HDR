@@ -45,13 +45,14 @@ def gsolve(Z, B, l, w):
     return g, lE
 
 def PlotResponseCurve(gList):
-    plt.figure(figsize=(10, 10))
-    plt.plot(gList[0], range(256),color = 'blue')
-    plt.plot(gList[1], range(256),color = 'green')
-    plt.plot(gList[2], range(256),color = 'red')
+    plt.figure(figsize=(8, 8))
+    blueline, = plt.plot(gList[0], range(256),color = 'blue')
+    greenline, = plt.plot(gList[1], range(256),color = 'green')
+    redline, = plt.plot(gList[2], range(256),color = 'red')
     plt.suptitle('Response Curve')
     plt.ylabel('Pixel Value (Zij)')
     plt.xlabel('Log Exposure (Ei*(delta t)j)')
+    plt.legend(handles=[blueline, greenline, redline], labels = ['Blue', 'Green', 'Red'], loc = 'best', fontsize = 'x-large')
     plt.savefig('RC.png')
 
 
