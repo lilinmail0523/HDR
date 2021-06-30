@@ -32,4 +32,6 @@ The difference between Reinhard’s local and global tone mapping operators is d
 
 [Photographic Tone Reproduction for Digital Images, Erik Reinhard *et al.*, 2002](http://www.cmap.polytechnique.fr/~peyre/cours/x2005signal/hdr_photographic.pdf)
 
+High Dynamic Range Imaging: Acquisition, Display, and Image-Based Lighting, Erik Reinhard *et al.*, 2010. 
+
 Advanced High Dynamic Range Imaging (2nd Edition), Banterle *et al.*, 2017. [[HDR Toolbox github]](https://github.com/banterle/HDR_Toolbox)
