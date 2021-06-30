@@ -6,7 +6,7 @@ The aim of this project was to implement the photographic imaging techniques, in
 2. HDR radiance map recovering by [Paul E. Debevec method](http://www.pauldebevec.com/Research/HDR/debevec-siggraph97.pdf)
 3. Tone mapping by [Reinhard's global and local operators](http://www.cmap.polytechnique.fr/~peyre/cours/x2005signal/hdr_photographic.pdf)
 
-# Results:
+# Results (Stanford Memorial Church):
 ## Response Curve:
 <center><img src="https://github.com/lilinmail0523/HDR/blob/master/python_ver/RC.png"/></center>
 
